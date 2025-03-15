@@ -22,9 +22,9 @@ class TwoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val args = TwoFragmentArgs.fromBundle(requireArguments())
-        val user = args.userDataModel
-        binding.tvName.text = user.name
-        binding.tvYear.text = user.year.toString()
-        binding.ivUser.setImageResource(user.image)
+        val car = args.carDataModel
+        binding.tvName.text = car.name
+        binding.tvYear.text = car.year.toString()
+        binding.ivUser.setImageResource(car.image)
     }
 }

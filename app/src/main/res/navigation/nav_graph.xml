@@ -20,7 +20,7 @@
         android:label="fragment_two"
         tools:layout="@layout/fragment_two" >
         <argument
-            android:name="user_data_model"
+            android:name="car_data_model"
             app:argType="com.example.cameraappkotlin.ui.model.Car" />
     </fragment>
 </navigation>

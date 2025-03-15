@@ -23,12 +23,13 @@ class CarAdapter(
     }
 
     override fun onBindViewHolder(holder: CarViewHolder, position: Int) {
-        val user = cars[position]
-        holder.bind(user)
+        val car = cars[position]
+        holder.bind(car)
         holder.itemView.setOnClickListener {
-            onItemClick(user)
+            onItemClick(car)
         }
     }
+
 
 
     override fun getItemCount(): Int = cars.size
